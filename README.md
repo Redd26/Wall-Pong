@@ -3,15 +3,15 @@ The work consists of the development of a game with application within virtual r
 
 The tools used for the development were:
 
-  Unity Engine - version: 2020.3.0f1
+  -Unity Engine - version: 2020.3.0f1
   
-  Blender
+  -Blender
   
-  Audacity
+  -Audacity
   
 The following tools were used for management:
 
-  Trello
+  -Trello
 
 Macro objective:
 
