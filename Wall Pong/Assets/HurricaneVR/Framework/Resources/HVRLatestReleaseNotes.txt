@@ -1,0 +1,14 @@
+Release 1.97
+
+-Fixed Hand Pose Editor from resetting hand poses on object selection due to a change Unity made to their object field change events in 2020+ 
+-Fixed an issue where grabbing a rigidbody with rotation constraints enabled would cause a inertia tensor 0 error on second release of the object.
+
+-HVRHandGrabber GrabTrigger now supports "Manual Release" in addition to Active and Toggle holds. The held object will not be dropped until	
+	the ForceRelease method is called on the grabbable or the hand component.
+-HVRHandGrabber - IK auto pose can now grab static grabbables without a rigidbody.
+-HVRSocketBag now has "IgnoreSockets" list and IgnoreSocket(HVRSocket) method to ignore specific sockets (useful to ignore sockets on the hand / wrist area)
+-HVRHandGrabOnStart - new component to force a hand grabber to grab a specific grabbable after start.
+-HVRSocketable - added LinkedGrabbables for compound objects, if any linked grabbable is being held, the object cannot be socketed.
+-Bow prefab updated with an additional grab point with the hand in 180 degrees opposite orientation
+-HVRGrabbable - Added HandFullReleased event which executes when a hand released it and it is no longer being held after.
+-HVRGrabbable - Added DisableHandCollision field to HVRGrabbable, if true the hand holding this object will have it's collision disabled while held.
